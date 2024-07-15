@@ -9,7 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fizzbuzz(int argc, char **argv) {
+int fizzbuzz(int argc, char **argv)
+{
     int term1 = atoi(argv[1]);
     int term2 = atoi(argv[2]);
 
@@ -19,13 +20,12 @@ int fizzbuzz(int argc, char **argv) {
         return 84;
     }
     for (; term1 <= term2; term1 += 1) {
-         if (term1 % 3 == 0 && term1 % 5 == 0)
+    if (term1 % 3 == 0 && term1 % 5 == 0)
             printf("FizzBuzz\n");
         else if (term1 % 3 == 0)
             printf("Buzz\n");
         else if (term1 % 5 == 0)
             printf("Fizz\n");
-
         else
             printf("%d\n", term1);
     }
